@@ -1,4 +1,10 @@
 Implemented
 
 
+Assumptions
+Can ants only start in positions where there are no other ants?
+What if position doesn't have all 4 directions?
+What happens if 3 ants meet? Do two fight, or all 3?
+What happens if 4 ants meet? Do two fight, or all 4?
+
 To be implemented
