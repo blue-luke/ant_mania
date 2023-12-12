@@ -1,13 +1,13 @@
 def ant_move(direction)
-  position = { "north"=> "Omrida", "south"=> "Celles", "east"=> "Chronoskis", "west"=> "Larvonthi" }
+  kara = { "north"=> "Omrida", "south"=> "Celles", "east"=> "Chronoskis", "west"=> "Larvonthi" }
   if direction == 'north'
-    return "ant moved to " + position["north"]
+    return "ant moved to " + kara["north"]
   elsif direction == 'south'
-    return "ant moved to " + position["south"]
+    return "ant moved to " + kara["south"]
   elsif direction == 'east'
-    return "ant moved to " + position["east"]
+    return "ant moved to " + kara["east"]
   elsif direction == 'west'
-    return "ant moved to " + position["west"]
+    return "ant moved to " + kara["west"]
   end
 end
 
