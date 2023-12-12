@@ -17,6 +17,10 @@ describe "ant moves two colonies" do
     ant_move('north')
     expect(ant_move_again('north')).to eq 'ant moved to Cheabrenta'
   end
+  it "moves north to Omrida then south to Kara" do
+    ant_move('north')
+    expect(ant_move_again('south')).to eq 'ant moved to Kara'
+  end
 end
 
 # Omrida north=Cheabrenta south=Kara east=Turnep west=Andomi

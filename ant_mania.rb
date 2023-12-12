@@ -4,5 +4,9 @@ def ant_move(direction)
 end
 
 def ant_move_again(direction)
-  return "ant moved to Cheabrenta"
+  if direction == "north"
+    return "ant moved to Cheabrenta"
+  else
+    return "ant moved to Kara"
+  end
 end
