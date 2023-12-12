@@ -6,12 +6,13 @@ class Ant
       "omrida" => { "north" => "Cheabrenta", "south" => "Kara", "east" => "Turnep", "west" => "Andomi" },
       "cheabrenta" => { "north" => "Uraro", "south" => "Omrida", "east" => "Trapist", "west" => "Heli" },
       "dige" => { "north" => "Ciiaescyg", "south" => "Lascogu", "east" => "Glatius", "west" => "Trapist" }
-    
     }
+    @latest_direction = ''
   end
 
   def move(direction)
     @current_position = get_position_hash_by_name(@current_position)
+    @latest_direction = direction
     return "ant moved to " + @current_position[direction]
   end
 
@@ -20,9 +21,10 @@ class Ant
   end
 
   def fight
-    if @current_position == 'omrida'
+    print(@current_position[@latest_direction])
+    if @current_position[@latest_direction] == 'Omrida'
     "Omrida has been destroyed!"
-    elsif @current_position == 'trapist'
+    elsif @current_position[@latest_direction] == 'Trapist'
       'Trapist has been destroyed!'
     end
     
