@@ -1,8 +1,8 @@
 require "./ant_mania.rb"
 
 
-describe "example" do 
-  it "returns 'hello'" do
-    expect(example_function()).to eq 'hello'
+describe " single ant" do 
+  it "moves north" do
+    expect(ant_move).to eq 'North'
   end
 end

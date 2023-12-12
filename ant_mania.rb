@@ -1,3 +1,3 @@
-def example_function
-  return 'hello'
+def ant_move
+  return 'North'
 end
