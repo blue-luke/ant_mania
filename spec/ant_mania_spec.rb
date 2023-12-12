@@ -3,6 +3,7 @@ require "./ant_mania.rb"
 kara = { "north"=> "Omrida", "south"=> "Celles", "east"=> "Chronoskis", "west"=> "Larvonthi" }
 omrida = { "north"=>"Cheabrenta", "south"=>"Kara", "east"=>"Turnep", "west"=>"Andomi" }
 cheabrenta = { "north" => "Uraro", "south" => "Omrida", "east" => "Trapist", "west" => "Heli" }
+dige = { "north" => "Ciiaescyg", "south" => "Lascogu", "east" => "Glatius", "west" => "Trapist" }
 
 
 describe "ant moves one colony" do
@@ -22,6 +23,13 @@ describe "ants fight at same positions" do
     ant2 = Ant.new
     ant1.move(kara, 'north')
     ant2.move(cheabrenta, 'south')
-    expect(ant2.fight()).to eq 'Omrida has been destroyed!'
+    expect(ant2.fight("omrida")).to eq 'Omrida has been destroyed!'
+  end
+  it "fight each other" do
+    ant1 = Ant.new
+    ant2 = Ant.new
+    ant1.move(dige, 'west')
+    ant2.move(cheabrenta, 'east')
+    expect(ant2.fight("trapist")).to eq 'Trapist has been destroyed!'
   end
 end
