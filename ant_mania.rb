@@ -21,7 +21,6 @@ class Ant
   end
 
   def fight
-    print(@current_position[@latest_direction])
     if @current_position[@latest_direction] == 'Omrida'
     "Omrida has been destroyed!"
     elsif @current_position[@latest_direction] == 'Trapist'
