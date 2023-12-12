@@ -13,6 +13,7 @@ describe "ant moves one colony" do
 end
 
 describe "ants fight at same positions" do
+  # Get this test to pass next
   it "fight each other" do
     ant1 = Ant.new("kara")
     ant1.move('north')
@@ -21,6 +22,8 @@ describe "ants fight at same positions" do
     expect(ant2.fight()).to eq 'Omrida has been destroyed!'
     expect(ant2.get_map()["omrida"].empty?).to eq true
   end
+  # Test hashed out while similar test being made to pass
+
   # it "fight each other" do
   #   ant1 = Ant.new("dige")
   #   ant1.move('west')
