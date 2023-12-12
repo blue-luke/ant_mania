@@ -1,3 +1,7 @@
-def ant_move
-  return 'North'
+def ant_move(direction)
+  if direction == 'North'
+    return 'North'
+  else
+    return 'South'
+  end
 end
