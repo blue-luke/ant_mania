@@ -1,4 +1,5 @@
-require "./ant_mania.rb"
+require "./ant.rb"
+require './map.rb'
 
 describe "ant moves one colony" do
   it "moves north from Kara to Omrida" do

@@ -1,12 +1,9 @@
+require './map.rb'
+
 class Ant 
   def initialize(position)
     @current_position = position
-    @hashes = {
-      "kara" => { "north" => "Omrida", "south" => "Celles", "east" => "Chronoskis", "west" => "Larvonthi" },
-      "omrida" => { "north" => "Cheabrenta", "south" => "Kara", "east" => "Turnep", "west" => "Andomi" },
-      "cheabrenta" => { "north" => "Uraro", "south" => "Omrida", "east" => "Trapist", "west" => "Heli" },
-      "dige" => { "north" => "Ciiaescyg", "south" => "Lascogu", "east" => "Glatius", "west" => "Trapist" }
-    }
+    @hashes = Map.instance.set_up("./task/hiveum_map_small.txt").get_map()
     @latest_direction = ''
   end
 

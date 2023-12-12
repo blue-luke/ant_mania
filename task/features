@@ -10,6 +10,7 @@ To be implemented
 Position needs to be destroyed (removed from available hashes)
 Ants need to be destroyed (no longer available for fights)
 Whole map needs to be loaded
+CLI allowing N to be passed
 
 Assumptions
 Can ants only start in positions where there are no other ants?
