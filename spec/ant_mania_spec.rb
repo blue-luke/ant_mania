@@ -17,19 +17,19 @@ describe "ant moves one colony" do
   end
 end
 
-# describe "ants fight at same positions" do
-#   it "fight each other" do
-#     ant1 = Ant.new
-#     ant2 = Ant.new
-#     ant1.move(kara, 'north')
-#     ant2.move(cheabrenta, 'south')
-#     expect(ant2.fight("omrida")).to eq 'Omrida has been destroyed!'
-#   end
-#   it "fight each other" do
-#     ant1 = Ant.new
-#     ant2 = Ant.new
-#     ant1.move(dige, 'west')
-#     ant2.move(cheabrenta, 'east')
-#     expect(ant2.fight("trapist")).to eq 'Trapist has been destroyed!'
-#   end
-# end
+describe "ants fight at same positions" do
+  it "fight each other" do
+    ant1 = Ant.new(kara)
+    ant2 = Ant.new(cheabrenta)
+    ant1.move('north')
+    ant2.move('south')
+    expect(ant2.fight("omrida")).to eq 'Omrida has been destroyed!'
+  end
+  it "fight each other" do
+    ant1 = Ant.new(dige)
+    ant2 = Ant.new(cheabrenta)
+    ant1.move('west')
+    ant2.move('east')
+    expect(ant2.fight("trapist")).to eq 'Trapist has been destroyed!'
+  end
+end
