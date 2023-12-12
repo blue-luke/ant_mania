@@ -23,7 +23,10 @@ class Ant
     elsif @current_position[@latest_direction] == 'Trapist'
       'Trapist has been destroyed!'
     end
-    
+  end
+
+  def get_map
+    @hashes
   end
 
 end 

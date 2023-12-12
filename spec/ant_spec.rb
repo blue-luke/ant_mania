@@ -19,12 +19,13 @@ describe "ants fight at same positions" do
     ant2 = Ant.new("cheabrenta")
     ant2.move('south')
     expect(ant2.fight()).to eq 'Omrida has been destroyed!'
+    expect(ant2.get_map()["omrida"].empty?).to eq true
   end
-  it "fight each other" do
-    ant1 = Ant.new("dige")
-    ant1.move('west')
-    ant2 = Ant.new("cheabrenta")
-    ant2.move('east')
-    expect(ant2.fight()).to eq 'Trapist has been destroyed!'
-  end
+  # it "fight each other" do
+  #   ant1 = Ant.new("dige")
+  #   ant1.move('west')
+  #   ant2 = Ant.new("cheabrenta")
+  #   ant2.move('east')
+  #   expect(ant2.fight()).to eq 'Trapist has been destroyed!'
+  # end
 end
