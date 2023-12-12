@@ -1,7 +1,7 @@
 require "./ant_mania.rb"
 
 
-describe " single ant" do 
+describe "single ant moves" do 
   it "moves north" do
     expect(ant_move('North')).to eq 'North'
   end
@@ -10,5 +10,8 @@ describe " single ant" do
   end
   it "moves south" do
     expect(ant_move'South').to eq 'South'
+  end
+  it "moves west" do
+    expect(ant_move'West').to eq 'West'
   end
 end
