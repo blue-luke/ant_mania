@@ -1,7 +1,10 @@
 class Ant 
+  def initialize(position)
+    @current_position = position
+  end
 
-  def move(position, direction)
-    "ant moved to " + position[direction]
+  def move(direction)
+    "ant moved to " + @current_position[direction]
   end
 
   def fight(position)
