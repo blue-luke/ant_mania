@@ -3,6 +3,7 @@
 ## Setup 
 - Codebase is in ruby with rspec as tests
 - $ gem install rspec && rspec
+- To see full git history: $ git log
 
 ## Approach
 - This was a relatively loose tdd. It was more important to show certain progress than complete the exercise, and 3 hours was not enough to complete the exercise anyway
