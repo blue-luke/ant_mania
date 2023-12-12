@@ -1,4 +1,5 @@
 def ant_move(direction)
-  return direction
-
+  if direction = 'North'
+    return 'ant moved to Omrida'
+  end
 end
